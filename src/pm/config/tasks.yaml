@@ -1,0 +1,40 @@
+product_manager_task:
+  description: >
+    Define a thoroughly scope about the feature {topic}
+    Make sure you think outloud and critisize your thinkings 
+    so that the scope of the product feature is very clear to 
+    other team members with respect to the software feature development 
+  expected_output: >
+    A very clear scope of about the {topic} at least a list of 3 bullet points comprehensively
+    described based on the {topic}. very consize, straight forward.
+  agent: product_manager
+
+engineer_task:
+  description: >
+    Review the context you got and identify the the feasibility of the feature about the {topic}
+    Be very careful and think outloud to come up with a currated feasibility of the {topic}
+  expected_output: >
+    Give atleast 3 points to note that will be used by other team members based on the {topic}. 
+    very clear and consise.
+  agent: engineer
+
+designer_task:
+  description: >
+    Review the context that you got to think about the UI/UX design concerns 
+    about the {topic} in a more robust and industry based.
+  expected_output: >
+    Give atleast 3 bullet points of the UI/UX design concerns based on the {topic}. very clear and consise.
+  agent: designer
+
+cpo_task:
+  description: >
+    Review the context you got and critisize it for the purpose of coming up with the decision about the {topic}
+    and a proper the roadmap to go for when approaching the {topic}
+  expected_output: >
+    A fully fledge report about the main concrete decisions, roadmap of the feature {topic}, each with full section information.
+    Formatted as markdown without '```'
+  agent: cpo
+  markdown: true
+  output_file: roadmap.md
+
+
