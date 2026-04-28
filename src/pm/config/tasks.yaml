@@ -34,6 +34,10 @@ cpo_task:
     A fully fledge report about the main concrete decisions, roadmap of the feature {topic}, each with full section information.
     Formatted as markdown without '```'
   agent: cpo
+  context:
+    - product_manager_task
+    - engineer_task
+    - designer_task
   markdown: true
   output_file: roadmap.md
 
